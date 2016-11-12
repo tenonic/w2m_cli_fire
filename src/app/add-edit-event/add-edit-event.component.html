@@ -1,0 +1,5 @@
+<form [formGroup]='form'>
+  <label for="title">title</label>
+  <input formControlName='location'>
+</form>
+<button [disabled]='!form.valid' (click)='ok()'>Ok</button>
